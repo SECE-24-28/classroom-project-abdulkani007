@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            font-family:arial;
+            font-size: 22px;
+         }
+         #logodiv{
+            margin-top: 10px;
+            width:100%;
+            background-color:grey;
+            color:black;
+            line-height:40px;
+            min-height: 40px;
+            padding-left:20px;
+            margin-bottom:10px;
+            font-weight: bold;
+         }
+         #parent{
+            display:flex;
+            flex-direction:row;
+            width:100%;
+            margin-bottom:10px;
+            gap:20px;
+         }
+         #sidebardiv{
+
+            padding-left:20px;
+            width:30%;
+            text-align:center;
+            color:black;
+            background-color:white;
+            min-height: 100px;
+            line-height:100px;
+            font-weight: bold;
+
+         }
+         #headerdiv{
+            padding-left:100px;
+            width:70%;
+            text-align:center;
+            color:black;
+            background-color:grey;
+            line-height:100px;
+            min-height:100px;
+            font-weight: bold;
+         }
+         #emptydiv{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            margin-bottom:10px;
+             gap:20px;
+            
+         }
+         #empty{
+            width:30%;
+            padding-left:20px;
+            min-height: 100px;
+            line-height:100px;
+            background-color: white;
+
+         }
+         #bodyArea{
+             width:70%;
+            text-align:center;
+            color:black;
+            background-color:white;
+            min-height: 400px;
+            line-height:400px;
+            background-color: grey;
+            font-weight: bold;
+         }
+         #footerdiv{
+            width:100%;
+            background-color:grey;
+            color:black;
+            line-height:40px;
+            min-height: 40px;
+            margin-top:10px;
+            text-align:center;
+            font-weight: bold;
+         }
+            #maindiv{
+                width:60%;
+                margin:auto;
+            }
+
+
+
+         </style>
+</head>
+<body>
+    <div id="maindiv">
+    <div id="logodiv">logo</div>
+    <div id ="parent">
+        <div id="sidebardiv">
+            <h1>side bar</h1>
+            <h1>Navigation</h1>
+        </div>
+        <div id="headerdiv">Header/Banner</div>
+    </div>
+    <div id="emptydiv">
+        <div id = "empty"></div>
+        <div id="bodyArea">Body Area</div>
+    </div>
+    <div id="footerdiv">Footer</div>
+    </div>
+</body>
+</html>

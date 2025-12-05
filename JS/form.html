@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> Form Validation </title>
+</head>
+<body>
+<form action="next.html" method="get" onclick="return validate()">
+<label> Enter Your Name: </label>
+<input type="text" id="tn"></input> <span id="stn"></span> <br><br>
+<label> Enter Your Password: </label>
+<input type="password" id="pass"></input> <span id="spass"></span> <br><br>
+<label> Confirm Your Password: </label>
+<input type="password" id="cpass"></input> <span id="scpass"></span> <br><br>
+<label> Choose the Gender: </label>
+Male<input type="radio" value="m" id="mr"> </input> <span id="sgender"></span>
+Female<input type="radio" value="f" id="fm"> </input> <br><br>
+<select id="course" name="coursename">
+<option value="-1"> ---Select Course--- </option> <span id="sselect"></span>
+<option value="c"> C++ Language </option>
+<option value="dsa"> DSA </option>
+<option value="cp"> Competitive Programming </option>
+</select>
+<br><br>
+<input type="submit" value="Click!!!"></input> 
+</form>
+
+
+<script type="text/javascript">
+function validate(){
+
+if(document.getElementById("tn").value===""){
+document.getElementById("stn").innerHTML="Name cannot be Empty!!!"
+document.getElementById("stn").style.color="red"
+return false
+}
+else{
+document.getElementById("stn").innerHTML="Accepted"
+document.getElementById("stn").style.color="green"
+}
+
+if(document.getElementById("pass").value===""){
+document.getElementById("spass").innerHTML="Password cannot be Empty!!!"
+document.getElementById("spass").style.color="red"
+return false
+}
+else{
+document.getElementById("spass").innerHTML="Accepted"
+document.getElementById("spass").style.color="green"
+}
+
+
+if(document.getElementById("cpass").value===""){
+document.getElementById("scpass").innerHTML="Confirm Password cannot be Empty!!!"
+document.getElementById("scpass").style.color="red"
+return false
+}
+else if(document.getElementById("pass").value!==document.getElementById("cpass").value){
+document.getElementById("scpass").innerHTML="Confirm Password and Password is not Same!!!"
+document.getElementById("scpass").style.color="red"
+return false
+}
+else{
+document.getElementById("scpass").innerHTML="Accepted"
+document.getElementById("scpass").style.color="green"
+}
+
+return true
+}
+</script>
+</body>
+</html>
